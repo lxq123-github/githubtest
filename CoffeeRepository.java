@@ -9,5 +9,5 @@ import java.util.List;
 @RepositoryRestResource(path = "/coffee")
 public interface CoffeeRepository extends JpaRepository<Coffee, Long> {
     List<Coffee> findByNameInOrderById(List<String> list);
-    Coffee findByName(String name);
+    Coffee findByName(String userName);
 }
